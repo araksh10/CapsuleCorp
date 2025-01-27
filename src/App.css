@@ -1,10 +1,15 @@
 :root{
   --color: #789;
+  --input: rgba(0, 223, 256, 0.5);
+  --text-white: #eee;
+  --text-black: #333;
+  --text-alter: rgba(170, 223, 256, 1);
 }
 
 .Capsule-Carrier {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   width: 100vw;
 }
