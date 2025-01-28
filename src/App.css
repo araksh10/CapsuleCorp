@@ -1,17 +1,21 @@
 :root{
   --color: #789;
-  --input: rgba(0, 223, 256, 0.5);
+  --input: rgba(0, 223, 256, 0.4);
   --text-white: #eee;
   --text-black: #333;
   --text-alter: rgba(170, 223, 256, 1);
+  --button-s: rgba(170, 223, 256, 0.1)
 }
 
 .Capsule-Carrier {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
+  box-sizing: border-box;
+
+  /* border: 1px solid red; */
 }
 
 .logo {
@@ -37,4 +41,34 @@
   .logo {
     animation: logo-spin infinite 20s linear;
   }
+}
+
+/* _____________________________________________________________________ */
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color);
+  border-radius: 5em;
+  margin: 5px;
+  transition: background-color 0.25s;
+
+  /* outline: none; */
+}
+.nav-button:hover {
+  background-color: var(--input);
+  /* border-bottom: var(--input); */
+  border-radius: 5em;
+  color: var(--text-alter);
+}
+.nav-button:active {
+  /* outline: none; */
+  border-bottom: none;
+  border-top: 2px solid var(--color);;
+}
+
+.body {
+  padding: 20px;
+  text-align: justify;
+  /* hyphens: auto; */
 }

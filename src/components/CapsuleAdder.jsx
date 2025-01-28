@@ -14,7 +14,7 @@ const CapsuleAdder = () => {
       cols={40}>
       </textarea>
 
-      <button>Submit</button>
+      <button className='button-s'>Submit</button>
     </div>
   )
 }
