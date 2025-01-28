@@ -1,0 +1,29 @@
+.Capsule-body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 200px;
+    width: 130px;
+    /* border: 1px solid var(--input); */
+    border-radius: 15px;
+    overflow: hidden;
+}
+.Capsule-body:hover {
+    box-shadow: 0px 0px 15px var(--input);
+}
+
+.Capsule-image {
+    flex: 2;
+}
+.Capsule-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.Capsule-name {
+    flex: 1;
+    padding: 3px;
+    background-color: var(--input);
+}

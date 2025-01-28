@@ -7,6 +7,10 @@
   --button-s: rgba(170, 223, 256, 0.1)
 }
 
+*{
+  font-family: monospace;
+}
+
 .Capsule-Carrier {
   display: flex;
   flex-direction: column;
