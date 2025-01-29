@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Provider } from "react-redux";
 import capsuleCorp from "./assets/capsuleCorp.png";
 import "./App.css";
 import Home from "./pages/Home";
 import Insights from "./pages/Insights";
+import store from "./redux/store";
 
 function App() {
   // Step 1: Create state to track the current page
@@ -14,7 +16,7 @@ function App() {
   };
 
   return (
-    <>
+    <Provider store={store}>
       <div className="Capsule-Carrier">
         {/* Navigation Bar */}
         <div className="nav-bar">
@@ -42,7 +44,7 @@ function App() {
           {currentPage === "Insights" && <Insights />}
         </div>
       </div>
-    </>
+    </Provider>
   );
 }
 
